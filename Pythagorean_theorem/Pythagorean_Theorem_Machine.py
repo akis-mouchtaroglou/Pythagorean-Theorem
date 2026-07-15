@@ -22,6 +22,14 @@ if mode == "1":
         b = int(input("\nThe value of the 2nd leg can't be equal or less than 0.\n"))
     c = math.sqrt(a**2 + b**2)
     print(f"\nThe value of the hypotenuse is {c}.\n")
+
+    print("\nYour triangle representation:")
+    print("   /|")
+    print(f"  / | a = {a}")
+    print(f" /  |")
+    print(f"/___|")
+    print(f" b = {b}")
+
 elif mode == "2":
     a = int(input("\nInsert the leg's value  \n"))
     while 0 >= a:
@@ -35,6 +43,15 @@ elif mode == "2":
         
     b = math.sqrt(c**2 - a**2)
     print(f"\nThe value of the 2nd leg is {b}.\n")
+
+
+    print("\nYour triangle representation:")
+    print("   /|")
+    print(f"  / | a = {a}")
+    print(f" /  |")
+    print(f"/___|")
+    print(f" b = {b}")
+
 else:
     a = int(input("\nInsert the 1st leg's value:  \n"))
     while 0 >= a:
